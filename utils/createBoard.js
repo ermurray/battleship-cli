@@ -5,33 +5,33 @@ const createBoard = function(size = 10) {
 
   while (i <= size) {
       if (i === 0) {
-          board.push([' - ']);
+          board.push(['| - |']);
       } else {
-          board.push(`| ${i} |`);
+          board.push([`| ${String.fromCharCode(i+64)} |`]);
       }
       i++;
     };
 
   for (let row = 0; row < board.length; row++) {
-    let i = 0;
-    while (i < size) {
+    let j = 0;
+    while (j < size) {
         if (row === 0) {
-            var col = String(i+1);
+            var col = String(j+1);
             switch (col.length) {
                 case 1:
-                    board[row].push(' ' + (i+1) + ' ');
+                    board[row].push(' ' + (j+1) + ' ');
                     break;
                 default:
-                    board[row].push(' ' + (i+1));
+                    board[row].push(' ' + (j+1));
             }
         } else {
             board[row].push('   ');
         }
-        i++;
+        j++;
     }
 
-  return board;
   };
+return board;
 };
 
 
