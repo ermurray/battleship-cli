@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ermurray/battleship-cli#readme",
   "dependencies": {
     "inquirer": "^8.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.3"
   }
 }
