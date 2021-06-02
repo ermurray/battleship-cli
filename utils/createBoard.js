@@ -34,4 +34,6 @@ const createBoard = function(size = 10) {
   };
 };
 
-console.log(createBoard());
+
+
+module.exports = { createBoard };
