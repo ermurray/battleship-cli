@@ -53,9 +53,9 @@ function playerSelect(){
         console.log('Play 2player game create boards and select ship placement');
         const gameboard = board.createBoard();
         for (row of gameboard){
-          console.log(JSON.stringify(row));
+          console.log(row.toString());
         }
-       
+        break;
       case 'CPU':
         console.log('Play against CPU create boards and select ship placement');
         break;
